@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="825.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.TruckInitController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Empty Vehicle Weight">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="42.0" prefHeight="3.0" prefWidth="797.0" />
+      <Label layoutX="14.0" layoutY="61.0" text="Vehicle Number" />
+      <TextField fx:id="number" layoutX="166.0" layoutY="57.0" prefHeight="25.0" prefWidth="267.0" />
+      <Label layoutX="14.0" layoutY="101.0" text="Driver Name" />
+      <TextField fx:id="name" layoutX="166.0" layoutY="97.0" prefHeight="25.0" prefWidth="267.0" />
+      <Separator layoutX="14.0" layoutY="139.0" prefHeight="3.0" prefWidth="797.0" />
+      <Label layoutX="14.0" layoutY="157.0" text="Empty Vehicle Weight" />
+      <TextField fx:id="weight" editable="false" layoutX="166.0" layoutY="153.0" prefHeight="25.0" prefWidth="267.0" />
+      <Button defaultButton="true" layoutX="462.0" layoutY="153.0" mnemonicParsing="false" onAction="#onReadWeightButtonClick" prefHeight="25.0" prefWidth="108.0" text="Read Weight" />
+      <Button defaultButton="true" layoutX="348.0" layoutY="217.0" mnemonicParsing="false" onAction="#onSaveButtonClickl" prefHeight="48.0" prefWidth="108.0" text="Save" />
+      <Button defaultButton="true" layoutX="462.0" layoutY="217.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="48.0" prefWidth="108.0" text="Exit" />
+   </children>
+</AnchorPane>

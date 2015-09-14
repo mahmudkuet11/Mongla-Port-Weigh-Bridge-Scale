@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WeightmentFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Weightment Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="41.0" prefHeight="0.0" prefWidth="754.0" />
+      <Label layoutX="17.0" layoutY="162.0" text="Container Number" />
+      <TextField fx:id="container_number" layoutX="175.0" layoutY="158.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="194.0" text="C &amp; F Agent Name" />
+      <TextField fx:id="agent_name" layoutX="175.0" layoutY="190.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="229.0" text="Agent's Mobile Number" />
+      <TextField fx:id="mobile" layoutX="175.0" layoutY="225.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="driver_name" layoutX="175.0" layoutY="260.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="264.0" text="Driver Name" />
+      <Label layoutX="17.0" layoutY="298.0" text="Operator Name" />
+      <TextField fx:id="operator_name" layoutX="175.0" layoutY="294.0" prefHeight="25.0" prefWidth="193.0" />
+      <Separator layoutX="395.0" layoutY="108.0" orientation="VERTICAL" prefHeight="310.0" prefWidth="5.0" />
+      <Label layoutX="421.0" layoutY="84.0" text="Vessel Name" />
+      <TextField fx:id="vessel_name" layoutX="532.0" layoutY="80.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="421.0" layoutY="116.0" text="Rot No." />
+      <TextField fx:id="rot_no" layoutX="532.0" layoutY="112.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="421.0" layoutY="154.0" text="Arr. Date" />
+      <DatePicker fx:id="arr_date" layoutX="532.0" layoutY="147.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="421.0" layoutY="186.0" text="B/E No." />
+      <TextField fx:id="be_no" layoutX="532.0" layoutY="182.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="421.0" layoutY="223.0" text="B/E Date" />
+      <DatePicker fx:id="be_date" layoutX="532.0" layoutY="216.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="334.0" text="AIN Number" />
+      <TextField fx:id="aiin_number" layoutX="175.0" layoutY="330.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="421.0" layoutY="256.0" text="Description of Goods" />
+      <TextArea fx:id="desc" layoutX="534.0" layoutY="252.0" prefHeight="66.0" prefWidth="193.0" />
+      <TextField fx:id="weight_2nd" alignment="CENTER" editable="false" layoutX="234.0" layoutY="441.0" onKeyReleased="#onContainerWeight" prefHeight="84.0" prefWidth="193.0" style="-fx-background-color: black; -fx-text-fill: red;">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></TextField>
+      <Label layoutX="19.0" layoutY="445.0" text="Gross Weight (M. Ton) 2nd Weight" />
+      <Separator layoutX="14.0" layoutY="417.0" prefHeight="3.0" prefWidth="754.0" />
+      <TextField fx:id="net_weight" editable="false" layoutX="234.0" layoutY="538.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="19.0" layoutY="542.0" text="Net Weight (M. Ton)" />
+      <Button defaultButton="true" layoutX="502.0" layoutY="454.0" mnemonicParsing="false" onAction="#onReadWeightClick" prefHeight="56.0" prefWidth="154.0" text="Read Weight" />
+      <Button defaultButton="true" layoutX="601.0" layoutY="538.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="25.0" prefWidth="60.0" text="Exit" />
+      <TextField fx:id="number" layoutX="175.0" layoutY="118.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="122.0" text="Vehicle Number" />
+      <Button defaultButton="true" layoutX="502.0" layoutY="538.0" mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save And Print" />
+      <Label layoutX="17.0" layoutY="87.0" text="Date" />
+      <DatePicker fx:id="date" layoutX="174.0" layoutY="83.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="17.0" layoutY="371.0" text="Container Name" />
+      <TextField fx:id="container_name" layoutX="175.0" layoutY="367.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="container_weight" layoutX="536.0" layoutY="330.0" onKeyReleased="#onContainerWeight" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="415.0" layoutY="334.0" text="Container Weight" />
+      <TextField fx:id="cont_ware_weight" layoutX="536.0" layoutY="367.0" onKeyReleased="#onContainerWeight" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="414.0" layoutY="371.0" text="Weight of Cont Tare" />
+   </children>
+</AnchorPane>
